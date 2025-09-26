@@ -1,0 +1,40 @@
+/* make sure the page dimensions are exact */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* full-page background image that fills the screen once (no repeat) */
+/* change the url(...) path if needed */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+
+  /* background image settings */
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), /* dark overlay for readability */
+    url("../images/c00lkidd_404.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;   /* <-- makes the single image fill the viewport */
+  /* background-attachment: fixed;  optional: keeps bg fixed while scrolling */
+
+  color: #fff;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+
+/* small centered demo box */
+div {
+    background: #111;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #ff2121;
+    width: min(90%, 480px);
+}

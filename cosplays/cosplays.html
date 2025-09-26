@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="/images/c00lkidd.ico">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="../main/main.html"
+          style="font-weight: bold; color: red; width: 100%; height: auto"
+          >c00lcosplay</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cosplays/cosplays.html">Costumes/Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Types</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cosplay Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Anime/Vocaloids</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Halloween/Creepypasta</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Superheroes</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div style="margin: 10px;">
+      <div style="display: flex; flex-direction: row;">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
+          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10px;">
+            Filter
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Anime/Vocaloids</button></li>
+            <li><button class="dropdown-item" type="button">Halloween/Creepypasta</button></li>
+            <li><button class="dropdown-item" type="button">Superheroes</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Cosplay grid deck (dark Bootstrap theme applied locally) -->
+    <section class="container my-4">
+      <!-- Add data-bs-theme="dark" so Bootstrap components inside honor dark styling -->
+      <div class="cosplay-grid-wrapper" data-bs-theme="dark" aria-label="Cosplay items">
+        <div class="cosplay-grid">
+          <!-- EXAMPLE CARD 1 -->
+          <article class="card cosplay-card">
+            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Elliot Milestone cosplay preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Elliot Milestone</h5>
+              <p class="card-text text-muted small">Warm, star-adorned outfit with spiked bracelets.</p>
+              <div class="mt-auto">
+                <a href="/cosplay-info/elliot.html" class="btn btn-outline-light btn-sm w-100" aria-label="View Elliot Milestone">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 2 -->
+          <article class="card cosplay-card">
+            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="C00lkidd cosplay">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">C00lkidd Set</h5>
+              <p class="card-text text-muted small">Retro neon-themed outfit and visor.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 3 -->
+          <article class="card cosplay-card">
+            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Star Worker</h5>
+              <p class="card-text text-muted small">Gold star belt and flaming pants.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 4 -->
+          <article class="card cosplay-card">
+            <img src="../images/c00lkidd_404.webp" loading="lazy" class="card-img-top" alt="Cosplay 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Night Flame</h5>
+              <p class="card-text text-muted small">Dark theme with glowing red outline.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 5 -->
+          <article class="card cosplay-card">
+            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 5">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Flare Guard</h5>
+              <p class="card-text text-muted small">Spiked wristbands & visor combo.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 6 -->
+          <article class="card cosplay-card">
+            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="Cosplay 6">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Solar Star</h5>
+              <p class="card-text text-muted small">Star glasses & radiant belt.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 7 -->
+          <article class="card cosplay-card">
+            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 7">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Valkyrie Visor</h5>
+              <p class="card-text text-muted small">Gold winged visor & flame jacket.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EXAMPLE CARD 8 -->
+          <article class="card cosplay-card">
+            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="Cosplay 8">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Blaze Walker</h5>
+              <p class="card-text text-muted small">Red-and-yellow triangular jacket look.</p>
+              <div class="mt-auto">
+                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
+              </div>
+            </div>
+          </article>
+        </div> <!-- /.cosplay-grid -->
+      </div> <!-- /.cosplay-grid-wrapper -->
+    </section>
+    <!-- ===== END: main content replacement ===== -->
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- About / Logo column -->
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <!-- “FunkMods” heading -->
+            <h5 class="fw-bold">c00lcosplay</h5>
+            <p class="small">Bringing you the best cosplay items since 2025.</p>
+          </div>
+
+          <!-- Quick Links column -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Explore More Accessories</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="../mods/mods.html"
+                  class="text-white text-decoration-none"
+                  >All Accessories</a
+                >
+              </li>
+              <li>
+                <a href="#RecentSection" class="text-white text-decoration-none"
+                  >Recent</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#PopularSection"
+                  class="text-white text-decoration-none"
+                  >Popular</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Community column -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold">Community</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="https://discord.gg/K32mHSdV"
+                  class="text-white text-decoration-none"
+                  >Discord</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Forums</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Support</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social / Contact column -->
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <h6 class="fw-bold">Follow Us</h6>
+            <!-- Social icons/links (plain text here) -->
+            <a href="#" class="text-white me-3 small">X</a>
+            <a href="#" class="text-white me-3 small">Facebook</a>
+            <a href="#" class="text-white small">Instagram</a>
+          </div>
+        </div>
+
+        <!-- Horizontal divider -->
+        <hr class="border-light" />
+
+        <!-- Copyright note -->
+        <div class="text-center small">
+          &copy; 2025 c00lcosplay. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

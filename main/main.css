@@ -1,0 +1,7 @@
+.hover-effect {
+  box-shadow: 0.3s ease;
+  cursor: pointer;
+}
+.hover-effect:hover {
+  box-shadow: 0 0 15px darkred, 0 0 30px darkred;
+}
