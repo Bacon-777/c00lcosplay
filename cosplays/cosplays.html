@@ -89,104 +89,9 @@
 
     <!-- Cosplay grid deck (dark Bootstrap theme applied locally) -->
     <section class="container my-4">
-      <!-- Add data-bs-theme="dark" so Bootstrap components inside honor dark styling -->
       <div class="cosplay-grid-wrapper" data-bs-theme="dark" aria-label="Cosplay items">
-        <div class="cosplay-grid">
-          <!-- EXAMPLE CARD 1 -->
-          <article class="card cosplay-card">
-            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Elliot Milestone cosplay preview">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Elliot Milestone</h5>
-              <p class="card-text text-muted small">Warm, star-adorned outfit with spiked bracelets.</p>
-              <div class="mt-auto">
-                <a href="/cosplay-info/elliot.html" class="btn btn-outline-light btn-sm w-100" aria-label="View Elliot Milestone">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 2 -->
-          <article class="card cosplay-card">
-            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="C00lkidd cosplay">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">C00lkidd Set</h5>
-              <p class="card-text text-muted small">Retro neon-themed outfit and visor.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 3 -->
-          <article class="card cosplay-card">
-            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 3">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Star Worker</h5>
-              <p class="card-text text-muted small">Gold star belt and flaming pants.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 4 -->
-          <article class="card cosplay-card">
-            <img src="../images/c00lkidd_404.webp" loading="lazy" class="card-img-top" alt="Cosplay 4">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Night Flame</h5>
-              <p class="card-text text-muted small">Dark theme with glowing red outline.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 5 -->
-          <article class="card cosplay-card">
-            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 5">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Flare Guard</h5>
-              <p class="card-text text-muted small">Spiked wristbands & visor combo.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 6 -->
-          <article class="card cosplay-card">
-            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="Cosplay 6">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Solar Star</h5>
-              <p class="card-text text-muted small">Star glasses & radiant belt.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 7 -->
-          <article class="card cosplay-card">
-            <img src="../images/elliotcosplay.webp" loading="lazy" class="card-img-top" alt="Cosplay 7">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Valkyrie Visor</h5>
-              <p class="card-text text-muted small">Gold winged visor & flame jacket.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXAMPLE CARD 8 -->
-          <article class="card cosplay-card">
-            <img src="../images/c00lkidd.webp" loading="lazy" class="card-img-top" alt="Cosplay 8">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Blaze Walker</h5>
-              <p class="card-text text-muted small">Red-and-yellow triangular jacket look.</p>
-              <div class="mt-auto">
-                <a href="#" class="btn btn-outline-light btn-sm w-100">View</a>
-              </div>
-            </div>
-          </article>
+        <!-- give this an id so the script finds it -->
+        <div class="cosplay-grid" id="cosplay-list">
         </div> <!-- /.cosplay-grid -->
       </div> <!-- /.cosplay-grid-wrapper -->
     </section>
@@ -272,5 +177,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -86,3 +86,58 @@
   outline: 3px solid rgba(255,33,33,0.12);
   outline-offset: 2px;
 }
+
+/* tag badges inside cards */
+.tag-list {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.tag-badge {
+  font-size: 0.68rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(255,255,255,0.02);
+  color: #ffdccc;
+}
+
+/* Type-specific color hints (tweak colors to taste) */
+.tag-anime-vocaloids {
+  background: linear-gradient(180deg, rgba(50,40,120,0.12), rgba(40,30,100,0.06));
+  color: #ffd;
+  border-color: rgba(120,80,220,0.12);
+}
+.tag-superheroes {
+  background: linear-gradient(180deg, rgba(20,80,20,0.12), rgba(10,60,10,0.06));
+  color: #ffd;
+  border-color: rgba(40,160,40,0.08);
+}
+
+/* accessibility: ensure focus for keyboard users */
+.tag-badge:focus {
+  outline: 3px solid rgba(255,33,33,0.12);
+  outline-offset: 2px;
+}
+/* Halloween / Creepypasta tag style (add even if not in the array yet) */
+.tag-halloween-creepypasta {
+  /* spooky gradient + pale text */
+  background: linear-gradient(180deg, rgba(60,10,30,0.12), rgba(10,0,0,0.06));
+  color: #ffd;
+  border-color: rgba(160,60,90,0.08);
+
+  /* extra visual "creepy" touch */
+  box-shadow: 0 4px 12px rgba(120,10,30,0.06) inset, 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* optional: a slightly different variant when tag contains slash or weird chars */
+.tag-halloween,
+.tag-creepypasta {
+  background: linear-gradient(180deg, rgba(70,15,35,0.10), rgba(15,5,5,0.04));
+  color: #ffe6e6;
+  border-color: rgba(120,40,60,0.06);
+}
